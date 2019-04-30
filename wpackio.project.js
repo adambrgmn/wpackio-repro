@@ -24,7 +24,7 @@ module.exports = {
   ],
   // It will all work if I choose to use a custom babel config, setting
   // `useBabelConfig` to `true`
-  useBabelConfig: false,
+  useBabelConfig: true,
   // This never gets applied
   jsBabelPresetOptions: {
     plugins: ['@babel/plugin-transform-runtime'],
