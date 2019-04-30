@@ -1,0 +1,14 @@
+{
+    "name": "adambrgmn/wpackio-repro",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Adam Bergman",
+            "email": "adam@fransvilhelm.com"
+        }
+    ],
+    "require": {
+        "wpackio/enqueue": "^1.6"
+    }
+}

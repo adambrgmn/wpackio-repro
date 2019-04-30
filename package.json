@@ -1,0 +1,19 @@
+{
+  "name": "wpackio-repro",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "wpackio-scripts build",
+    "start": "wpackio-scripts start",
+    "archive": "wpackio-scripts pack"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.4.4",
+    "@wpackio/entrypoint": "^3.2.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.4.4",
+    "@wpackio/scripts": "^3.3.0"
+  }
+}
