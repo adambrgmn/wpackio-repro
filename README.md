@@ -2,9 +2,10 @@
 
 ## Setup
 
-This is a standard child theme which can be added to any WordPress installation. And WPackIO is initialized the standard way.
+This is a standard plugin that can be dropped into any WordPress installation. And WPackIO is initialized the standard way.
 
-A few commands needs to be run in order to set everything up:
+1. First clone or in any other way put these files inside the plugins directory of a WordPress installation
+2. Then run the following scripts to install dependencies and build files
 
 ```sh
 // First install all js dependencies
@@ -20,6 +21,10 @@ yarn build
 // or
 npm build
 ```
+
+3. Activate the plugin
+
+By default the built files will work since `useBabelConfig` is set to `true`. If you change `useBabelConfig` to `false` and try to rebuild the files the app wont work anymore (atleast on the front end).
 
 ## Issue
 
