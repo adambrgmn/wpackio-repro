@@ -2,7 +2,7 @@ const pkg = require('./package.json');
 
 module.exports = {
   appName: 'wpackioRepro',
-  type: 'theme',
+  type: 'plugin',
   slug: 'wpackio-repro',
   bannerConfig: {
     name: 'wpackioRepro',

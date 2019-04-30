@@ -1,10 +1,21 @@
 <?php
 /**
- * wpackio-repro functions and definitions
+ * WPackIO Repro
  *
- * @link https://developer.wordpress.org/themes/basics/theme-functions/
+ * @package     wpackioRepro
+ * @author      Adam Bergman
+ * @copyright   2019 Adam Bergman
+ * @license     MIT
  *
- * @package wpackio-repro
+ * @wordpress-plugin
+ * Plugin Name: WPackIO Repro
+ * Plugin URI:  https://github.com/adambrgmn/wpackio-repro
+ * Description: Reporpduction of an issue with WPackIO
+ * Version:     1.0.0
+ * Author:      Adam Bergman
+ * Author URI:  https://github.com/adambrgmn
+ * License:     MIT
+ * License URI: https://opensource.org/licenses/MIT
  */
 
 namespace AdamBrgmn\WPackioRepro;
@@ -21,9 +32,8 @@ class Scripts
             'wpackioRepro',
             'dist',
             '1.0.0',
-            'theme',
-            false,
-            'child'
+            'plugin',
+            __FILE__
         );
 
         add_action('wp_enqueue_scripts', [$this, 'enqueueScripts']);
@@ -37,7 +47,3 @@ class Scripts
 }
 
 new Scripts();
-
-add_action('wp_enqueue_scripts', function () {
-    wp_enqueue_style('parent-style', get_template_directory_uri() . '/style.css');
-});
